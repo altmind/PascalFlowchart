@@ -1,0 +1,16 @@
+begin
+	{Test example for
+	 lexer/parser}
+	readln(i);
+	repeat
+		i:=i-1;
+		if i<>0 then writeln(i,' bottles of beer on wall')
+		else
+		begin
+			writeln('nothing left on the wall');
+			if (DEBUG) then	writeln('debug: program finished');
+			halt();
+		end;
+		readln();
+	until i>0;
+end;
